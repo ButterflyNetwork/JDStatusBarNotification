@@ -494,7 +494,7 @@
   // adjust for iPhone X
   CGFloat topLayoutMargin = JDStatusBarRootVCLayoutMargin().top;
   if (topLayoutMargin > 0) {
-    height += topLayoutMargin;
+    height += self.activeStyle.iPhoneXNavigationBarCoverPercentage * topLayoutMargin;
   }
 
   _topBar.frame = CGRectMake(0, yPos, width, height);

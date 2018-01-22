@@ -88,5 +88,8 @@ typedef NS_ENUM(NSInteger, JDStatusBarProgressBarPosition) {
 /// The corner radius of the progress bar. Default is 0.0
 @property (nonatomic, assign) CGFloat progressBarCornerRadius;
 
+/// 0.f - 1.f for 0% to 100% coverage of the Navigation Bar for iPhone X.  Default is 100%.
+@property (nonatomic, assign) CGFloat iPhoneXNavigationBarCoverPercentage;
+
 @end
 
